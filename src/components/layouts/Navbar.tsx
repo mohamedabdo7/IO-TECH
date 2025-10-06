@@ -5,18 +5,22 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import LangSwitcher from "@/components/LangSwitcher";
+import { useParams } from "next/navigation";
+import { routes } from "@/config/routes";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations("Navigation");
+  const params = useParams();
+  const locale = params.locale as string;
 
   const navLinks = [
-    { href: "/", label: t("home") },
-    { href: "/about", label: t("about") },
-    { href: "/services", label: t("services") },
-    { href: "/blog", label: t("blog") },
-    { href: "/team", label: t("team") },
-    { href: "/contact", label: t("contact") },
+    { href: routes.home(locale), label: t("home") },
+    { href: routes.about(locale), label: t("about") },
+    { href: routes.services(locale), label: t("services") },
+    { href: routes.blog(locale), label: t("blog") },
+    { href: routes.team(locale), label: t("team") },
+    { href: routes.contact(locale), label: t("contact") },
   ];
 
   const toggleMenu = () => {
@@ -36,7 +40,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Empty left space for symmetry */}
@@ -73,28 +77,30 @@ const Navbar = () => {
             {/* Right Section - Search and CTA */}
             <div className="hidden lg:flex items-center space-x-3">
               {/* Search Icon */}
-              <motion.button
-                className="p-2.5 text-white/80 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/10"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <Link href={routes.search(locale)}>
+                <motion.button
+                  className="p-2.5 text-white/80 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/10"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </motion.button>
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </motion.button>
+              </Link>
 
               {/* Language Switcher */}
               <LangSwitcher />
@@ -121,25 +127,27 @@ const Navbar = () => {
               <LangSwitcher />
 
               {/* Mobile Search Icon */}
-              <motion.button
-                className="p-2 text-white/80 hover:text-white transition-colors duration-300 rounded-lg hover:bg-white/10"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <Link href={routes.search(locale)}>
+                <motion.button
+                  className="p-2 text-white/80 hover:text-white transition-colors duration-300 rounded-lg hover:bg-white/10"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </motion.button>
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </motion.button>
+              </Link>
 
               <motion.button
                 onClick={toggleMenu}

@@ -32,8 +32,8 @@ export default function ModernFooter() {
       <div className="container mx-auto px-6 py-8">
         {/* Top Section - Subscribe & Social */}
         <div
-          className={`flex flex-col sm:flex-row items-center gap-4 mb-8 ${
-            isRTL ? "sm:justify-start" : "justify-center sm:justify-end"
+          className={`flex flex-col sm:flex-row items-center gap-4 mb-8 justify-center sm:justify-end ${
+            isRTL ? "sm:flex-row-reverse" : ""
           }`}
         >
           {/* Email Subscribe */}
@@ -106,10 +106,8 @@ export default function ModernFooter() {
         >
           {/* Navigation Links */}
           <nav
-            className={`flex flex-wrap gap-6 ${
-              isRTL
-                ? "justify-center md:justify-end flex-row-reverse"
-                : "justify-center md:justify-start"
+            className={`flex flex-wrap gap-6 justify-center md:justify-start ${
+              isRTL ? "md:flex-row-reverse" : ""
             }`}
           >
             {navLinks.map((link) => (
@@ -125,8 +123,8 @@ export default function ModernFooter() {
 
           {/* Copyright */}
           <div
-            className={`text-sm ${
-              isRTL ? "text-center md:text-left" : "text-center md:text-right"
+            className={`text-sm text-center md:text-${
+              isRTL ? "left" : "right"
             }`}
           >
             {t("copyright")}

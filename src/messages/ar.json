@@ -83,5 +83,38 @@
       "services": "خدماتنا"
     },
     "copyright": "© 2024 · جميع الحقوق محفوظة"
+  },
+  "SearchPage": {
+    "title": "البحث في الخدمات",
+    "description": "ابحث عن الخدمات التي تحتاجها",
+    "searchPlaceholder": "ابحث عن الخدمات...",
+    "searchButton": "بحث",
+    "filters": "الفلاتر",
+    "resultsFound": "نتيجة موجودة",
+    "for": "لـ",
+    "noResults": "لا توجد نتائج",
+    "tryAdjusting": "جرب تغيير معايير البحث"
+  },
+  "ServicesPage": {
+    "title": "خدماتنا",
+    "description": "اكتشف مجموعة واسعة من الخدمات المهنية التي نقدمها",
+    "showingServices": "عرض {count} من {total} خدمة",
+    "pageInfo": "صفحة {current} من {total}",
+    "previous": "السابق",
+    "next": "التالي",
+    "noServices": "لا توجد خدمات متاحة",
+    "loadMore": "تحميل المزيد",
+    "learnMore": "اقرأ المزيد"
+  },
+  "ServiceDetail": {
+    "aboutService": "حول هذه الخدمة",
+    "keyFeatures": "الميزات الرئيسية",
+    "benefits": "الفوائد",
+    "getQuote": "احصل على عرض سعر",
+    "contactUs": "اتصل بنا",
+    "duration": "المدة",
+    "price": "السعر",
+    "category": "الفئة",
+    "serviceDetails": "تفاصيل الخدمة"
   }
 }

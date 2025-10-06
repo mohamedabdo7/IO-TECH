@@ -1,7 +1,7 @@
 import GlobalProgressBar from "@/components/GlobalProgressBar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
+import { Work_Sans, Noto_Sans_Arabic } from "next/font/google";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -9,9 +9,15 @@ const workSans = Work_Sans({
   display: "swap",
 });
 
+const notoSansArabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+  variable: "--font-noto-sans-arabic",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Family Medical Guide",
-  description: "Your comprehensive family medicine resource",
+  title: "IO-TECH",
+  description: "Description",
   icons: {
     icon: "/fav.svg",
   },
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={workSans.variable}>
+    <html className={`${workSans.variable} ${notoSansArabic.variable}`}>
       <body className={workSans.className} suppressHydrationWarning={true}>
         <GlobalProgressBar />
         {children}

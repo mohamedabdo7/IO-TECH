@@ -3,6 +3,28 @@
     "title": "Welcome to Next.js",
     "description": "This is a public page"
   },
+  "ServicesPage": {
+    "title": "Our Services",
+    "description": "Discover our wide range of professional services",
+    "showingServices": "Showing {count} of {total} services",
+    "pageInfo": "Page {current} of {total}",
+    "previous": "Previous",
+    "next": "Next",
+    "noServices": "No services available",
+    "loadMore": "Load More",
+    "learnMore": "Learn More"
+  },
+  "ServiceDetail": {
+    "aboutService": "About This Service",
+    "keyFeatures": "Key Features",
+    "benefits": "Benefits",
+    "getQuote": "Get Quote",
+    "contactUs": "Contact Us",
+    "duration": "Duration",
+    "price": "Price",
+    "category": "Category",
+    "serviceDetails": "Service Details"
+  },
   "Navigation": {
     "home": "Home",
     "about": "About us",
@@ -83,5 +105,16 @@
       "services": "Our Services"
     },
     "copyright": "© 2024 · All rights reserved"
+  },
+  "SearchPage": {
+    "title": "Search Services",
+    "description": "Find the services you need",
+    "searchPlaceholder": "Search for services...",
+    "searchButton": "Search",
+    "filters": "Filters",
+    "resultsFound": "results found",
+    "for": "for",
+    "noResults": "No results found",
+    "tryAdjusting": "Try adjusting your search criteria"
   }
 }
