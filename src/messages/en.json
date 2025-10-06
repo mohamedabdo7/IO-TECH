@@ -1,0 +1,87 @@
+{
+  "HomePage": {
+    "title": "Welcome to Next.js",
+    "description": "This is a public page"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "blog": "Blog",
+    "team": "Our Team",
+    "contact": "Contact us",
+    "bookAppointment": "Book Appointment",
+    "menu": "Menu"
+  },
+  "HeroSection": {
+    "slides": {
+      "slide1": {
+        "title": "Lorem Ipsum",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      },
+      "slide2": {
+        "title": "Innovation & Excellence",
+        "description": "Transforming ideas into reality with cutting-edge solutions and unparalleled expertise in modern technology"
+      },
+      "slide3": {
+        "title": "Building The Future",
+        "description": "Creating sustainable and innovative solutions that shape tomorrow's world with precision and creativity"
+      }
+    },
+    "readMore": "Read More",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to slide",
+    "professional": "Professional"
+  },
+  "OurTeamSection": {
+    "title": "Our Team",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "previousMember": "Previous team member",
+    "nextMember": "Next team member",
+    "goToSlide": "Go to slide"
+  },
+  "TestimonialsSection": {
+    "title": "What our clients are saying",
+    "description": "Our clients range from individual investors, to local, international as well as fortune 500 companies. Our clients range from individual investors, to local, international as well as fortune 500 companies.",
+    "previousTestimonial": "Previous testimonial",
+    "nextTestimonial": "Next testimonial",
+    "testimonials": {
+      "testimonial1": {
+        "quote": "With the help of the hospitable staff of Al Safar and Partners I was able to get my work done without any hassle. The help I received helped me a great deal to overcome the issues that I faced. I was always updated about my case and my queries never went unanswered.",
+        "name": "Mohammed Saif",
+        "position": "CEO/Company"
+      },
+      "testimonial2": {
+        "quote": "Outstanding service and professional team. They guided me through every step of the process with patience and expertise. Highly recommended for anyone seeking reliable legal assistance.",
+        "name": "Sarah Johnson",
+        "position": "Business Owner"
+      },
+      "testimonial3": {
+        "quote": "Exceptional experience from start to finish. The team was incredibly responsive and knowledgeable. They made a complex process feel simple and straightforward.",
+        "name": "Michael Chen",
+        "position": "Entrepreneur"
+      }
+    }
+  },
+  "Footer": {
+    "subscribe": {
+      "placeholder": "Email",
+      "button": "Subscribe"
+    },
+    "contacts": "Contacts",
+    "socialMedia": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "googlePlus": "Google Plus"
+    },
+    "navigation": {
+      "about": "About",
+      "strategy": "Our Strategy",
+      "advantages": "Our Advantages",
+      "responsibility": "Social Responsibility",
+      "services": "Our Services"
+    },
+    "copyright": "© 2024 · All rights reserved"
+  }
+}
