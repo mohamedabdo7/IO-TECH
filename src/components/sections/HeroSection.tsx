@@ -150,7 +150,7 @@ const HeroSection = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 lg:left-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300"
+        className="absolute start-6 lg:start-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300"
         aria-label={t("previousSlide")}
       >
         <ChevronLeft className="w-6 h-6 mx-auto" />
@@ -158,7 +158,7 @@ const HeroSection = () => {
 
       <button
         onClick={nextSlide}
-        className="absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300"
+        className="absolute end-6 lg:end-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300"
         aria-label={t("nextSlide")}
       >
         <ChevronRight className="w-6 h-6 mx-auto" />
@@ -189,7 +189,7 @@ const HeroSection = () => {
         </div>
 
         {/* Profile Image Card */}
-        <div className="hidden lg:block absolute right-12 xl:right-24 top-1/2 -translate-y-1/2 profile-enter">
+        <div className="hidden lg:block absolute end-12 xl:end-24 top-1/2 -translate-y-1/2 profile-enter">
           <div className="relative group">
             {/* Card with shadow */}
             <div className="relative w-56 h-72 rounded-2xl overflow-hidden shadow-2xl bg-amber-900/20">
@@ -219,7 +219,7 @@ const HeroSection = () => {
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-8 left-8 z-30 flex flex-col gap-3">
+      <div className="absolute bottom-8 start-8 z-30 flex flex-col gap-3">
         {slides.map((_, index: number) => (
           <button
             key={index}
@@ -235,7 +235,7 @@ const HeroSection = () => {
       </div>
 
       {/* Decorative Animated Shape */}
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl pointer-events-none pulse-animation" />
+      <div className="absolute top-1/4 end-1/4 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl pointer-events-none pulse-animation" />
     </section>
   );
 };

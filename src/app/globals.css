@@ -5,6 +5,11 @@
 /* RTL Support */
 [dir="rtl"] {
   text-align: right;
+  font-family: var(--font-noto-sans-arabic), var(--font-sans);
+}
+
+[dir="ltr"] {
+  font-family: var(--font-work-sans), var(--font-sans);
 }
 
 [dir="rtl"] .space-x-2 > * + * {
@@ -159,4 +164,12 @@
 
 .rotate-y-180 {
   transform: rotateY(180deg);
+}
+
+.font-arabic {
+  font-family: var(--font-noto-sans-arabic), var(--font-sans) !important;
+}
+
+.font-english {
+  font-family: var(--font-work-sans), var(--font-sans) !important;
 }
